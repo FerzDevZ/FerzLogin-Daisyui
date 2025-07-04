@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FerzLogin - Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-card">
+    <div class="auth-avatar">
+      <img src="https://api.dicebear.com/7.x/identicon/svg?seed=register" alt="avatar" />
+    </div>
+    <div class="auth-title">Create Account</div>
+    <div class="auth-desc">Register to get started</div>
+    <form id="registerForm" class="space-y-4">
+      <input type="text" id="registerUsername" placeholder="Username" class="input input-bordered w-full bg-neutral text-white" required autocomplete="username" />
+      <input type="password" id="registerPassword" placeholder="Password" class="input input-bordered w-full bg-neutral text-white" required autocomplete="new-password" />
+      <button type="submit" class="btn btn-primary w-full">Register</button>
+      <div id="registerMsg" class="text-center mt-2"></div>
+    </form>
+    <div class="divider">or</div>
+    <div class="text-center">
+      <a href="login.html" class="link link-info">Already have an account? <span class="underline">Login</span></a>
+    </div>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FerzLogin - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-card">
+    <div class="auth-avatar">
+      <img src="https://api.dicebear.com/7.x/identicon/svg?seed=login" alt="avatar" />
+    </div>
+    <div class="auth-title">Welcome to FerzLogin</div>
+    <div class="auth-desc">Login to your account</div>
+    <form id="loginForm" class="space-y-4">
+      <input type="text" id="loginUsername" placeholder="Username" class="input input-bordered w-full bg-neutral text-white" required autocomplete="username" />
+      <input type="password" id="loginPassword" placeholder="Password" class="input input-bordered w-full bg-neutral text-white" required autocomplete="current-password" />
+      <button type="submit" class="btn btn-primary w-full">Login</button>
+      <div id="loginMsg" class="text-center mt-2"></div>
+    </form>
+    <div class="divider">or</div>
+    <div class="text-center">
+      <a href="register.html" class="link link-info">Don't have an account? <span class="underline">Register</span></a>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

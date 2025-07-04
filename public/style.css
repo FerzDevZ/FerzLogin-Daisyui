@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(120deg, #23272f 0%, #18181b 100%);
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  scrollbar-width: thin;
+  scrollbar-color: #00ffe7 #23272f;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #23272f;
+}
+body::-webkit-scrollbar-thumb {
+  background: #00ffe7;
+  border-radius: 8px;
+}
+.auth-card {
+  background: rgba(28, 30, 34, 0.98);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 #00ffe7a0;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 0.7s cubic-bezier(.39,.575,.56,1.000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(40px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.auth-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.auth-avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #00ffe7, 0 0 16px #00ffe7cc;
+  background: #23272f;
+  object-fit: cover;
+}
+.auth-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+.auth-desc {
+  text-align: center;
+  color: #b3b3b3;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.input:focus {
+  border-color: #00ffe7;
+  box-shadow: 0 0 0 2px #00ffe733;
+  background: #23272f;
+}
+.btn-primary {
+  background: linear-gradient(90deg, #00ffe7 0%, #007cf0 100%);
+  color: #18181b;
+  font-weight: bold;
+  border: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.btn-primary:hover {
+  transform: scale(1.04) translateY(-2px);
+  box-shadow: 0 4px 24px 0 #00ffe7a0;
+}
+.divider {
+  color: #444;
+  margin: 1.5rem 0;
+}
+@media (max-width: 500px) {
+  .auth-card { padding: 1.2rem 0.2rem; max-width: 98vw; }
+  .auth-title { font-size: 1.3rem; }
+}
+@media (max-width: 350px) {
+  .auth-card { padding: 0.5rem 0.1rem; }
+}
