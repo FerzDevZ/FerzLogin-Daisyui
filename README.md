@@ -12,9 +12,6 @@ FerzLogin adalah aplikasi autentikasi modern fullstack berbasis Node.js (Express
 - UI/UX modern: glassmorphism, neon accent, dark mode, responsif, micro-interaction
 - Frontend 100% JavaScript
 
-## Demo UI
-![FerzLogin Demo](https://raw.githubusercontent.com/FerzDevZ/FerzLogin-Daisyui/main/demo.png)
-
 ---
 
 ## Instalasi & Setup
